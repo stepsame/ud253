@@ -1,0 +1,31 @@
+{% extends "header.html" %}
+
+{% block content %}
+	<form action="/blog/newpost" method="post">
+		<h2>new post</h2>
+		<table>
+			<tr>
+				<td>subject</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" name="subject" value="{{subject}}">
+				</td>
+			</tr>
+			<tr>
+				<td>content</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea name="content" cols="80" rows="40">{{content}}</textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="error">{{error}}</div>
+					<input type="submit">
+				</td>
+			</tr>
+		</table>
+	</form>
+{% endblock %}

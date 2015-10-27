@@ -1,0 +1,38 @@
+<form action="/blog/signup" method="post">
+	<h1>Signup</h1>
+
+	<table>
+		<tr>
+			<td>Username</td>
+			<td>
+				<input type="text" name="username" value="{{username}}">
+				<span style="color: red">{{username_error}}</span>
+			</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>
+				<input type="password" name="password" value="{{password}}">
+				<span style="color: red">{{password_error}}</span>			
+			</td>
+		</tr>
+		<tr>
+			<td>Verfify Password</td>
+			<td>
+				<input type="password" name="verify" value="{{verify}}">
+				<span style="color: red">{{verify_error}}</span>			
+			</td>
+		</tr>
+		<tr>
+			<td>Email (optional)</td>
+			<td>
+				<input type="text" name="email" value="{{email}}">
+				<span style="color: red">{{email_error}}</span>			
+			</td>
+		</tr>
+		<tr>
+			<td><input type="submit"></td>
+		</tr>
+	</table>
+	
+</form>

@@ -1,0 +1,10 @@
+{% extends "header.html" %}
+
+{% block content %}
+	<div>
+		<span>{{blog.subject}}</span>
+		<span>{{blog.created.strftime("%b %d, %Y")}}</span>
+		<p>{{blog.content}}</p>
+		<p>queried {{query_time}} seconds ago</p>
+	</div>
+{% endblock %}
